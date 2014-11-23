@@ -1,3 +1,5 @@
+## Please read README.md for information and codebook
+
 ##Reading Feature and activity Type information data into R
 features<-read.table("./data/UCI HAR Dataset/features.txt")
 activity_labels<-read.table("./data/UCI HAR Dataset/activity_labels.txt")
