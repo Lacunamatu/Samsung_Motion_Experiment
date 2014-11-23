@@ -68,8 +68,8 @@ fmasterd$Activity_Type<-t
 ## Lets extract the relevant fields using grep and search
 ## mean() and std() as these are the mean and standard deviation
 ## definitions as mentioned in features_info.txt
-mean_field<-grep("mean()",names(fmasterd))
-std_field<-grep("std()",names(fmasterd))
+mean_field<-grep("mean\\(\\)",names(fmasterd))
+std_field<-grep("std\\(\\)",names(fmasterd))
 select_field<-sort(c(1,2,3,mean_field,std_field))
 newdata<-fmasterd[,select_field]
 
